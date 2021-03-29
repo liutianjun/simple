@@ -3,7 +3,7 @@ package simple
 import (
 	"errors"
 	"fmt"
-	"github.com/mlogclub/simple/date"
+	"github.com/liutianjun/simple/date"
 	"strconv"
 	"strings"
 	"time"

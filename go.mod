@@ -1,4 +1,4 @@
-module github.com/mlogclub/simple
+module github.com/liutianjun/simple
 
 go 1.15
 
