@@ -3,7 +3,7 @@ package simple
 import (
 	"database/sql"
 	log "github.com/sirupsen/logrus"
-	"gorm.io/driver/mysql"
+	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/schema"
 )
@@ -29,7 +29,7 @@ func OpenDB(dsn string, config *gorm.Config, maxIdleConns, maxOpenConns int, mod
 		}
 	}
 
-	if db, err = gorm.Open(mysql.Open(dsn), config); err != nil {
+	if db, err = gorm.Open(postgres.Open(dsn), config); err != nil {
 		log.Errorf("opens database failed: %s", err.Error())
 		return
 	}

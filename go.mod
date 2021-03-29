@@ -18,6 +18,6 @@ require (
 	github.com/smartystreets/goconvey v1.6.4 // indirect
 	github.com/yudai/pp v2.0.1+incompatible // indirect
 	golang.org/x/crypto v0.0.0-20200820211705-5c72a883971a
-	gorm.io/driver/mysql v1.0.1
-	gorm.io/gorm v1.20.1
+	gorm.io/driver/postgres v1.0.8
+	gorm.io/gorm v1.20.12
 )
